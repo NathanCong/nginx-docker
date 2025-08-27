@@ -1,4 +1,7 @@
 #!/bin/bash
 
-# 重启服务
-sudo docker compose restart
+# 停止服务
+sudo docker compose down
+
+# 启动服务
+sudo docker compose up -d
