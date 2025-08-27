@@ -1,0 +1,10 @@
+services:
+  nginx:
+    image: nginx:stable
+    container_name: system-nginx
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ${VOLUME_CONF_PATH}:/etc/nginx/conf.d
+      - ${VOLUME_HTML_PATH}:/usr/share/nginx/html
