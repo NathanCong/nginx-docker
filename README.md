@@ -17,5 +17,5 @@ sh ./scripts/stop.sh
 ## 重启服务
 
 ```bash
-sh ./scripts/reload.sh
+sh ./scripts/restart.sh
 ```
