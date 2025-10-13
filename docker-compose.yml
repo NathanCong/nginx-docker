@@ -3,11 +3,7 @@ services:
     image: nginx:stable
     container_name: system-nginx
     restart: unless-stopped
-    ports:
-      - 80:80
-      - 8010:8010
-      - 8011:8011
-      - 8012:8012
+    network_mode: host
     volumes:
       - ${VOLUME_CONF_PATH}:/etc/nginx/conf.d
       - ${VOLUME_HTML_PATH}:/usr/share/nginx/html
